@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+VOLUME /tmp
+COPY target/OdysseyAppAPIGateway-0.0.1-SNAPSHOT.jar OdysseyAppAPIGateway.jar
+ENTRYPOINT ["java","-jar","OdysseyAppAPIGateway.jar"]
